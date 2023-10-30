@@ -5,7 +5,7 @@
 
 - name: Create a job- "{{item.dir}}/{{item.name}}"
   community.general.jenkins_job:
-    config: "{{ lookup('file', 'tmp/s-job.xml') }}"
+    config: "{{ lookup('file', '/tmp/s-job.xml') }}"
     name: "{{item.dir}}/{{item.name}}"
     password: admin123
     url: http://172.31.47.184:8080
