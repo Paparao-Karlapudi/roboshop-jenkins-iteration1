@@ -1,5 +1,5 @@
 - name: create folder and Jobs
-  hosts: local
+  hosts: all
   connection: localhost
   roles:
     - jenkinsjobs
